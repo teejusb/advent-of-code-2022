@@ -2,8 +2,8 @@ use std::collections::BinaryHeap;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-fn main() {
-  let file = File::open("in.txt").expect("Cannot open file");
+pub fn solve() {
+  let file = File::open("src/days/day01/in.txt").expect("Cannot open file");
   let reader = BufReader::new(file);
   
   let mut sum: i32 = 0;

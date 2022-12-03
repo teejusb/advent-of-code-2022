@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn part1() {
-  let file = File::open("in.txt").expect("Cannot open file");
+  let file = File::open("src/days/day02/in.txt").expect("Cannot open file");
   let reader = BufReader::new(file);
   
   let map = HashMap::from([
@@ -43,7 +43,7 @@ fn part1() {
 }
 
 fn part2() {
-  let file = File::open("in.txt").expect("Cannot open file");
+  let file = File::open("src/days/day02/in.txt").expect("Cannot open file");
   let reader = BufReader::new(file);
   
   let map = HashMap::from([
@@ -90,7 +90,7 @@ fn part2() {
   println!("{}", sum);
 }
 
-fn main() {
+pub fn solve() {
   part1();
   part2();
 }
