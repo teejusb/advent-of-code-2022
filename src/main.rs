@@ -2,7 +2,7 @@ mod days;
 
 use std::env;
 use days::{day01, day02, day03, day04, day05, day06, day07, day08, day09,
-           day10};
+           day10, day11};
 
 fn get_day_solver(day: i32) -> fn() {
   match day {
@@ -16,6 +16,7 @@ fn get_day_solver(day: i32) -> fn() {
     8 => day08::day08::solve,
     9 => day09::day09::solve,
     10 => day10::day10::solve,
+    11 => day11::day11::solve,
     _ => unimplemented!(),
   }
 }
